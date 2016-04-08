@@ -12,46 +12,37 @@
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
       m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-67193166-1', 'auto');
-  ga('send', 'pageview');
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-67193166-1', 'auto');
+    ga('send', 'pageview');
   </script>
   <style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Lato", sans-serif
-  }
-  .w3-navbar,
-  h1,
-  button {
-    font-family: "Montserrat", sans-serif
-  }
-  .fa-anchor,
-  .fa-coffee {
-    font-size: 200px
-  }
-  p {
-    text-align: justify;
-  }
-  #messagesDiv {
-    max-height: 350px;
-    overflow: auto;
-  }
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Lato", sans-serif
+    }
+    .w3-navbar, h1, button {
+      font-family: "Montserrat", sans-serif
+    }
+    .fa-anchor, .fa-coffee {
+      font-size: 200px
+    }
+    p {
+      text-align: justify;
+    }
+    #messagesDiv {
+      max-height: 350px;
+      overflow: auto;
+    }
   </style>
 </head>
 <body>
@@ -143,8 +134,8 @@
     <div class="w3-content">
       <div class="w3-two">
         <h4 class="w3-padding">
-				<a href="https://pablo-ivan.github.io/Alpha-System/">Alpha System</a>
-			</h4>
+          <a href="https://pablo-ivan.github.io/Alpha-System/">Alpha System</a>
+				</h4>
         <p class="w3-text-grey">
           Alpha es un sistema neuronal escrito en AIML. 
           Básicamente asimila el lenguage humano y lo convierte en un comando procesable. 
@@ -304,7 +295,6 @@
     var message = snapshot.val();
     displayChatMessage(message.date, message.name, message.text);
   });
-
   function displayChatMessage(date, name, text) {
     $('<div/>').text(text).prepend($('<strong/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
@@ -314,5 +304,4 @@
     <p>La página que está viendo requiere el uso de JavaScript para su funcionamiento. Por favor, actívelo.</p>
   </noscript>
 </body>
-
 </html>
