@@ -213,7 +213,7 @@
         <button class=" w3-teal w3-btn-block w3-padding-large" onclick="publicar()">Send</button>
         <div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
-            <strong>Origin of Time - $PABLO:</strong> Welcome to my website. I've designed the whole page. 
+            <strong class="w3-text-blue">Origin of Time - $PABLO:</strong> Welcome to my website. I've designed the whole page. 
             If you wish to contact me directly, be it for a general comment or even to hire me(great!), 
             here it is: 
             <a class="w3-text-teal" href="mailto:pabloivangomezsoto@gmail.com?subject=Contact&body=Full%20Name%3A%0AMotive%3A">
@@ -281,7 +281,7 @@
         displayChatMessage(message.date, message.name, message.text);
       });
       function displayChatMessage(date, name, text) {
-        $('<div/>').text(text).prepend($('<strong/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
+        $('<div/>').text(text).prepend($('<strong class="w3-text-blue"/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
       };
     </script>
