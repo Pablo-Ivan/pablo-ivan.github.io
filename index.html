@@ -309,7 +309,7 @@
     displayChatMessage(message.date, message.name, message.text);
   });
   function displayChatMessage(date, name, text) {
-    $('<div/>').text(text).prepend($('<strong/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
+    $('<div/>').text(text).prepend($('<strong class="w3-text-blue"/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
   };
   </script>
