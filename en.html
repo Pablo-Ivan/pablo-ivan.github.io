@@ -212,7 +212,7 @@
       	<input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Your email" type="email">
       	<textarea class="w3-input w3-center w3-padding-xlarge w3-text-teal" id="messageInput" maxlength="256" placeholder="Your message"></textarea>
 			</div>
-      <button class=" w3-teal w3-btn-block w3-padding-large" onclick="publicar()">Send</button>
+      <button class=" w3-teal w3-btn-block w3-padding-large" onclick="publish()">Send</button>
         <div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
             <strong class="w3-text-blue">Origin of Time - $PABLO:</strong> Welcome to my website. I've designed the whole page. 
@@ -247,7 +247,7 @@
  				document.getElementById("demo").classList.toggle("w3-show");
 			}
       var myDataRef = new Firebase('https://alphatalken.firebaseio.com');
-      var publicar = function() {
+      var publish = function() {
         var name = $('#nameInput').val().toUpperCase();
         var age = $('#space2').val();
         var mail = $('#spaceE').val();
@@ -288,7 +288,7 @@
       };
     </script>
   	<noscript>
-      <p>La página que está viendo requiere el uso de JavaScript para su funcionamiento. Por favor, actívelo.</p>
+      <p>Please turn off JavaScript.</p>
     </noscript>
 	</body>
 </html>
