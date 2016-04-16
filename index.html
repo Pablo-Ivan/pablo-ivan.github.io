@@ -91,12 +91,8 @@
     <div class="w3-padding-64">
       <h1 class="w3-margin w3-jumbo">Pablo Iván G. Soto</h1>
       <p class="w3-xlarge w3-center">Página de Programación</p>
-      <a href="#">
-        <button class="w3-btn w3-white w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">Español</button>
-      </a>
-      <a href="en">
-        <button class="w3-btn w3-white w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">English</button>
-      </a>
+      <a href="#" class="w3-btn w3-round w3-white w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">Español</a>
+      <a href="en" class="w3-btn w3-round w3-white w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">English</a>
     </div>
   </div>
 
@@ -104,8 +100,8 @@
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-one">
-        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
-        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
+        <input class="w3-input w3-border w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
+        <input class="w3-input w3-border w3-round w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
         <h2>Acerca de</h2>
         <p class="w3-text-grey">
           Bienvenido(a) a mi sitio web,
@@ -232,10 +228,10 @@
           ¿Tiene alguna pregunta? ¿sólo quiere saludar? Lo invito a utilizar los campos de abajo para dejar un mensaje en la página. 
           Presione "Enviar" cuando haya finalizado su mensaje.
         </p>
-        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="15" placeholder='Su Primer Nombre'>
-        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
-        <textarea class="w3-input w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
-        <button class=" w3-teal w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
+        <input class="w3-input w3-border w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
+        <input class="w3-input w3-border w3-round w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
+        <textarea class="w3-input w3-border w3-round w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
+        <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
         <div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
             <strong class="w3-text-blue">Inicio del Tiempo - $PABLO:</strong> Bienvenidos a mi sitio web. 
