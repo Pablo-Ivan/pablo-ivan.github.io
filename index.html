@@ -277,13 +277,11 @@
     var mail = $('#spaceE').val();
     var text = $('#messageInput').val();
     if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
-      name = "USUARIO";
+      return null;
     } else if (name === "") {
-      name = "USUARIO";
-      text = "¡Increíble sitio web, Pablo!";
+      return null;
     } else if (text === "") {
-      name = "USUARIO";
-      text = "Sin comentarios";
+      return null;
     } else {
     	var now = new Date().toString();
     	var formatDay = now.substring(8, 10);
