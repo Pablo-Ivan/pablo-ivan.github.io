@@ -278,12 +278,8 @@
     var text = $('#messageInput').val();
     if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
       return null;
-    } else if (name === "") {
-      name = "USUARIO";
-      text = "¡Increíble sitio web, Pablo!";
-    } else if (text === "") {
-      name = "USUARIO";
-      text = "Sin comentarios";
+    } else if (name === "" || text === "" || mail === "") {
+      return null;
     } else {
       console.log("Esto debería aparecer cuando el comentario sea válido, es decir...normalmente");
     }
