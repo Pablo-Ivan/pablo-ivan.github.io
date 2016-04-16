@@ -152,22 +152,20 @@
           siendo el patrón lo que el usuario escribe. Las respuestas de Alpha se encuentran en inglés por motivos de accesibilidad. 
           He aquí un ejemplo de código en AIML:
         </p>
-        <pre class="w3-text-blue">
-          <code>
-&lt;&#63;xml version=&#8220;1.0&#8221; encoding=&#8220;UTF&#8211;8&#8221;&#63;&gt;
-&#32;&#32;&lt;aiml version=&#8220;2.0&#8221;&gt;
-&#32;&#32;&#32;&#32;&lt;category&gt;
-&#32;&#32;&#32;&#32;&#32;&#32;&lt;pattern&gt;Hello&lt;&#47;pattern&gt;
-&#32;&#32;&#32;&#32;&#32;&#32;&lt;template&gt;Hi, <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'user'"></span>!&lt;&#47;template&gt;
-&#32;&#32;&#32;&#32;&lt;&#47;category&gt;
-&#32;&#32;&#32;&#32;&lt;category&gt;
-&#32;&#32;&#32;&#32;&#32;&#32;&lt;pattern&gt;Who are you&lt;&#47;pattern&gt;
-&#32;&#32;&#32;&#32;&#32;&#32;&lt;template&gt;I am Alpha&lt;&#47;template&gt;
-&#32;&#32;&#32;&#32;&lt;&#47;category&gt;
-&#32;&#32;&lt;&#47;aiml&gt;
-&lt;&#47;&#63;xml&gt;
-          </code>
-        </pre>
+        <div class="w3-code htmlHigh">
+        	<?xml version=“1.0” encoding=“UTF–8”?>
+  					<aiml version=“2.0”>
+    					<category>
+      					<pattern>Hello</pattern>
+      					<template>Hi, user!</template>
+    					</category>
+    					<category>
+      					<pattern>Who are you</pattern>
+      					<template>I am Alpha</template>
+    					</category>
+  					</aiml>
+					</?xml>
+        </div>
         <p class="w3-text-grey">
           Le explicaré cómo funciona. La primera línea (en dónde se específica la versión de <em>XML</em> y codificación) 
           se conoce como <em>prolog</em>, esta línea le indica al navegador que está ante una versión estandarizada 
