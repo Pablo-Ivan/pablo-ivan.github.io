@@ -285,31 +285,31 @@
       name = "USUARIO";
       text = "Sin comentarios";
     } else {
-      console.log("Esto debería aparecer cuando el comentario sea válido, es decir...normalmente");
-    }
-    var now = new Date().toString();
-    var formatDay = now.substring(8, 10);
-    var formatMonth = now.substring(4, 7);
-    var formatYear = now.substring(11, 15);
-    var formatTime = now.substring(16, 21);
-    var date = "(" + formatTime + ") " + formatDay + "/" + formatMonth + "/" + formatYear;
-    myDataRef.push({
-      date: date,
-      name: name,
-      age: age,
-      email: mail,
-      text: text
-    });
-    $('#messageInput').val('');
+    	var now = new Date().toString();
+    	var formatDay = now.substring(8, 10);
+    	var formatMonth = now.substring(4, 7);
+    	var formatYear = now.substring(11, 15);
+    	var formatTime = now.substring(16, 21);
+    	var date = "(" + formatTime + ") " + formatDay + "/" + formatMonth + "/" + formatYear;
+    	myDataRef.push({
+      	date: date,
+      	name: name,
+      	age: age,
+      	email: mail,
+      	text: text
+    	});
+    	$('#messageInput').val('');
+  	}
+  	myDataRef.on('child_added', function(snapshot) {
+    	var message = snapshot.val();
+    	displayChatMessage(message.date, message.name, message.text);
+  	});
+  	function displayChatMessage(date, name, text) {
+    	$('<div/>').text(text).prepend($('<strong class="w3-text-blue"/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
+    	$('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+  	};
+    console.log("Esto debería aparecer cuando el comentario sea válido, es decir...normalmente");
   }
-  myDataRef.on('child_added', function(snapshot) {
-    var message = snapshot.val();
-    displayChatMessage(message.date, message.name, message.text);
-  });
-  function displayChatMessage(date, name, text) {
-    $('<div/>').text(text).prepend($('<strong class="w3-text-blue"/>').text(date + " - " + name + ': ')).appendTo($('#messagesDiv'));
-    $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
-  };
   </script>
   <noscript>
     <p>La página que está viendo requiere el uso de JavaScript para su funcionamiento. Por favor, actívelo.</p>
