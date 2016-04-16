@@ -251,13 +251,9 @@
         var mail = $('#spaceE').val();
         var text = $('#messageInput').val();
         if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
-          name = "USER";
-        } else if (name === "") {
-          name = "USER";
-          text = "Great website!";
-        } else if (text === "") {
-          name = "USER";
-          text = "No comments";
+          name === "USER";
+        } else if (name === "" || mail === "" || text === "") {
+          return null;
         } else {
           console.log("This should appear normally.");
         }
