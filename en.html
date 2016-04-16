@@ -251,7 +251,8 @@
         var mail = $('#spaceE').val();
         var text = $('#messageInput').val();
         if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
-          name === "USER";
+          name = "USER";
+          text = "Not $Pablo!";
         } else if (name === "" || mail === "" || text === "") {
           return null;
         } else {
