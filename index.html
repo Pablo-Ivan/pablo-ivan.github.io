@@ -104,7 +104,7 @@
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-one">
-        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Nombre">
+        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
         <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
         <h2>Acerca de</h2>
         <p class="w3-text-grey">
@@ -134,10 +134,10 @@
   </div>
 
   <!-- Second Grid -->
-  <h2 class="w3-blue w3-padding w3-center">Proyectos</h2>
   <div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
     <div class="w3-content">
       <div class="w3-two">
+      	<h2 class="w3-blue w3-padding w3-center">Proyectos</h2>
         <h4 class="w3-padding">
           <a class="w3-text-teal" href="https://pablo-ivan.github.io/Alpha-System/">Alpha System</a>
 				</h4>
@@ -232,12 +232,10 @@
           ¿Tiene alguna pregunta? ¿sólo quiere saludar? Lo invito a utilizar los campos de abajo para dejar un mensaje en la página. 
           Presione "Enviar" cuando haya finalizado su mensaje.
         </p>
-        <div class="w3-card-2">
-        	<input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="15" placeholder='Su primer nombre' type='text'>
-        	<input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su correo" type="email">
-        	<textarea class="w3-input w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su comentario"></textarea>
-        </div>
-        <button class=" w3-teal w3-btn-block w3-padding-large" onclick="publicar()">Enviar</button>
+        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="15" placeholder='Su Primer Nombre'>
+        <input class="w3-input w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
+        <textarea class="w3-input w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
+        <button class=" w3-teal w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
         <div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
             <strong class="w3-text-blue">Inicio del Tiempo - $PABLO:</strong> Bienvenidos a mi sitio web. 
@@ -271,7 +269,7 @@
     document.getElementById("demo").classList.toggle("w3-show");
   }
   var myDataRef = new Firebase('https://alphatalk.firebaseio.com');
-  var publicar = function() {
+  var enviar = function() {
     var name = $('#nameInput').val().toUpperCase();
     var age = $('#space2').val();
     var mail = $('#spaceE').val();
