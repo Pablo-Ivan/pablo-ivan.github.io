@@ -1,7 +1,13 @@
 // AngularJS. Pablo Ivan G. Soto. 2016.
-var app = angular.module('principal', ['ngStorage']);
-app.controller('MainCtrl', function($scope, $localStorage) {
-  $scope.$storage = $localStorage;
+var app = angular.module('principal', []);
+app.controller('MainCtrl', function($scope) {
+  $scope.nombre = '';
+  $scope.edad = '';
+  $scope.correo = '';
+  localStorage.setItem("name", $scope.nombre);
+  localStorage.setItem("lastname", $scope.edad);
+  localStorage.getItem("name");
+  localStorage.getItem("lastname");
 });
 
 //HTTPS
