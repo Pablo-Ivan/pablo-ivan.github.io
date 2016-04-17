@@ -77,9 +77,6 @@
       <a href="https://pablo-ivan.github.io/Recursive-Game/" class="w3-padding-large w3-hover-white">Toe</a>
     </li>
     <li class="w3-hide-small">
-    	<a href="https://pablo-ivan.github.io/Sudoku/" class="w3-padding-large w3-hover-white">PS-doku</a>
-    </li>
-    <li class="w3-hide-small">
     	<a href="https://pablo-ivan.github.io/Diplomacy/" class="w3-padding-large w3-hover-white">Diplomacy</a>
     </li>
   </ul>
@@ -95,9 +92,6 @@
       </li>
       <li>
       	<a class="w3-padding-large" href="https://pablo-ivan.github.io/Recursive-Game/">Toe</a>
-      </li>
-      <li>
-      	<a class="w3-padding-large" href="https://pablo-ivan.github.io/Sudoku/">PS-doku</a>
       </li>
       <li>
       	<a class="w3-padding-large" href="https://pablo-ivan.github.io/Diplomacy/">Diplomacy</a>
@@ -232,7 +226,7 @@
         </h4>
         <p class="w3-text-grey">
         	PS-doku es un pequeño programa que resuelve sudokus. No lo he vinculado a la navegación principal debido a que su
-        	contexto no pertenece al de Alpha System.
+        	contexto no pertenece al de Alpha System. Es de licencia libre.
         </p>
         <h4>
 					<a class="w3-text-teal" href="https://pablo-ivan.github.io/Diplomacy/">Diplomacy</a>
@@ -289,7 +283,13 @@
 				</div>
 				<!--end modal-->
 				
-				<div id='messagesDiv' class="w3-card-2 w3-margin-top">
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
+        <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
+        <textarea class="w3-input w3-border-blue w3-round w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
+        <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
+        
+        <!--Chat-->
+        <div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
             <strong class="w3-text-blue">El Big Bang - $PABLO:</strong> Bienvenidos a mi sitio web. 
             Sus mensajes aparecerán aquí. Si quieren contactarme por correo, así sea para un comentario, 
@@ -299,11 +299,6 @@
             </a>
           </div>
         </div>
-        <br>
-        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
-        <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
-        <textarea class="w3-input w3-border-blue w3-round w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
-        <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
       </div>
     </div>
   </div>
