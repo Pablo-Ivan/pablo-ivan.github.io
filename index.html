@@ -244,6 +244,8 @@
           Sus datos no serán utilizados para otro propósito mas que para poder escribir un mensaje.
           Presione "Enviar" cuando haya finalizado su mensaje.
         </p>
+        
+        <!--modal-->
         <div id="id01" class="w3-modal">
 					<div class="w3-modal-content w3-animate-zoom w3-card-2">
 						<header class="w3-container w3-teal w3-center"> 
@@ -264,11 +266,9 @@
     				</footer>
   				</div>
 				</div>
-        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
-        <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
-        <textarea class="w3-input w3-border-blue w3-round w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
-        <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
-        <div id='messagesDiv' class="w3-card-2 w3-margin-top">
+				<!--end modal-->
+				
+				<div id='messagesDiv' class="w3-card-2 w3-margin-top">
           <div>
             <strong class="w3-text-blue">El Big Bang - $PABLO:</strong> Bienvenidos a mi sitio web. 
             Sus mensajes aparecerán aquí. Si quieren contactarme por correo, así sea para un comentario, 
@@ -278,6 +278,11 @@
             </a>
           </div>
         </div>
+        
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
+        <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
+        <textarea class="w3-input w3-border-blue w3-round w3-center w3-text-teal w3-padding-xlarge" id="messageInput" maxlength="256" placeholder="Su Comentario"></textarea>
+        <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="enviar()">Enviar</button>
       </div>
     </div>
   </div>
