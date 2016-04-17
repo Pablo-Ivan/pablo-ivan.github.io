@@ -1,11 +1,8 @@
-// AngularJS. Pablo Ivan G. Soto. 2016.
-var app = angular.module('principal', []);
-app.controller('MainCtrl', function($scope) {
-  $scope.nombre = '';
-  $scope.edad = '';
-  $scope.correo = '';
-});
-
+// AngularJS. Pablo Ivan G. Soto.
+  var app = angular.module('principal', ['ngStorage']);
+  app.controller('MainCtrl', function($scope, $localStorage) {
+    $scope.$storage = $localStorage.$default({ nombre: '', edad: '', correo: ''});
+  });
 //HTTPS
 var host = "pablo-ivan.github.io";
 if ((host == window.location.host) && (window.location.protocol != "https:")) {
