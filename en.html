@@ -280,11 +280,20 @@
           name = "USER";
           text = "Not $Pablo!";
         } else if (name === "" || mail === "" || text === "") {
-        	alert("Missing fields.");
+        	var modal = function() {
+    				document.getElementById('id01').style.display='block';
+    			}
+    			modal();
           return null;
         } else {
           console.log("This should appear normally.");
         }
+        var modality = document.getElementById('id01');
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modality.style.display = "none";
+					}
+				}
         var now = new Date().toString();
         var formatDay = now.substring(8, 10);
         var formatMonth = now.substring(4, 7);
