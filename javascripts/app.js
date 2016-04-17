@@ -2,12 +2,6 @@
 var app = angular.module('principal', ['ngStorage']);
 app.controller('MainCtrl', function($scope, $localStorage) {
   $scope.$storage = $localStorage;
-  $scope.nombre = '';
-  $scope.correo = ''
-  $scope.chat = '';
-  if ($scope.nombre === '' || $scope.correo === '') {
-    $scope.chat = "Complete los datos faltantes.";
-  }
 });
 
 //HTTPS
