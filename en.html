@@ -208,7 +208,7 @@
   </div>
 </div>
 		
-		<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-two">
       <h2>Support</h2>
@@ -219,16 +219,18 @@
 			</p>
 			<div id="id01" class="w3-modal">
 					<div class="w3-modal-content w3-animate-zoom w3-card-2">
-						<header class="w3-container w3-teal"> 
+						<header class="w3-container w3-teal w3-center"> 
 							<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
       				<h2>Chat</h2>
     				</header>
     				<div class="w3-container">
-      				<p>
-        				You didn't filled all the fields. Be sure to do it.
+      				<p class="w3-justify">
+        				You didn't filled all the fields. Be sure to do it. <em>Interesting fact:</em>
+        				This chat was originally created to serve as a mini app for the users, but it evolved and became a powerful
+        				feedback tool
       				</p>
     				</div>
-    				<footer class="w3-container w3-teal">
+    				<footer class="w3-container w3-teal w3-center">
       				<p>Pablo Ivan G. Soto</p>
     				</footer>
   				</div>
@@ -237,16 +239,16 @@
       <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Your Email" type="email">
       <textarea class="w3-input w3-border-blue w3-round w3-center w3-padding-xlarge w3-text-teal" id="messageInput" maxlength="256" placeholder="Your Message"></textarea>
       <button class=" w3-teal w3-round w3-btn-block w3-padding-large" onclick="send()">Send</button>
-        <div id='messagesDiv' class="w3-card-2 w3-margin-top">
-          <div>
-            <strong class="w3-text-blue">The Big Bang - $PABLO:</strong> Welcome to my website. Your messages will appear here. 
-            If you wish to contact me directly, be it for a general comment or even to hire me(great!), 
-            here it is: 
-            <a class="w3-text-teal" href="mailto:pabloivangomezsoto@gmail.com?subject=Contact&body=Full%20Name%3A%0AMotive%3A">
-              pabloivangomezsoto@gmail.com
-            </a>
-          </div>
+      <div id='messagesDiv' class="w3-card-2 w3-margin-top">
+        <div>
+          <strong class="w3-text-blue">The Big Bang - $PABLO:</strong> Welcome to my website. Your messages will appear here. 
+          If you wish to contact me directly, be it for a general comment or even to hire me(great!), 
+          here it is: 
+          <a class="w3-text-teal" href="mailto:pabloivangomezsoto@gmail.com?subject=Contact&body=Full%20Name%3A%0AMotive%3A">
+            pabloivangomezsoto@gmail.com
+          </a>
         </div>
+      </div>
     </div>
   </div>
 </div>
@@ -288,12 +290,6 @@
         } else {
           console.log("This should appear normally.");
         }
-        var modality = document.getElementById('id01');
-				window.onclick = function(event) {
-					if (event.target == modal) {
-						modality.style.display = "none";
-					}
-				}
         var now = new Date().toString();
         var formatDay = now.substring(8, 10);
         var formatMonth = now.substring(4, 7);
