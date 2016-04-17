@@ -103,9 +103,9 @@
       <img class="w3-round w3-card-8" src="Pablo II.jpg" width="190px" height="180px" alt="Fotografía de Pablo Iván">
       -->
       <p class="w3-xlarge w3-center">Página de Programación</p>
-      <a href="#">
-  			<button class="w3-btn w3-white w3-bottombar w3-border-teal w3-leftbar w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">Español</button>
-    	</a>
+			<a href="#">
+				<button class="w3-btn w3-white w3-bottombar w3-border-teal w3-leftbar w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">Español</button>
+			</a>
 			<a href="en">
 				<button class="w3-btn w3-white w3-bottombar w3-border-teal w3-leftbar w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">English</button>
 			</a>
@@ -117,7 +117,7 @@
     <div class="w3-content">
       <div class="w3-one">
         <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
-        <input min="1" max="100" class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
         <h2>Acerca de</h2>
         <p class="w3-text-grey">
           Bienvenido(a) a mi sitio web,
@@ -290,6 +290,7 @@
       name = "USUARIO";
       text = "¡No soy $Pablo!";
     } else if (name === "" || text === "" || mail === "") {
+    	alert("Complete los datos faltantes");
       return null;
     } else {
       console.log("Esto debería aparecer cuando el comentario sea válido, es decir...normalmente.");
