@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Estable y Válido-->
+<!--Experimental-->
 <html data-ng-app="principal" lang="es-MX">
 <head>
   <meta charset="utf-8">
@@ -116,18 +116,18 @@
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-one">
-        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
-        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="edad" id="space2" maxlength="3" placeholder="Su Edad">
         <h2>Acerca de</h2>
         <p class="w3-text-grey">
           Bienvenido(a) a mi sitio web,
-          <span class="ng-binding" data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'usuario'"></span>. 
+          <span class="ng-binding" data-ng-bind="nombre.toLowerCase().capitalize() || 'usuario'"></span>. 
           Este es un lugar para permitir al público la consulta de mis programas. 
           Dejo a su disposición mis proyectos de desarrollo web.
-          <span class="ng-binding" data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'Usuario'"></span>, 
+          <span class="ng-binding" data-ng-bind="nombre.toLowerCase().capitalize() || 'Usuario'"></span>, 
           ¿ha notado que conforme escribía su nombre, la página se actualizaba? Gracias a usted ahora sé su nombre, el cual tiene
-          <span class="ng-binding" data-ng-bind="$storage.nombre.length || 'tantas'"></span> letras, tiene
-          <span class="ng-binding" data-ng-bind="$storage.edad || 'tantos'"></span> años, etc ¿Impresionante, no? 
+          <span class="ng-binding" data-ng-bind="nombre.length || 'tantas'"></span> letras, tiene
+          <span class="ng-binding" data-ng-bind="edad || 'tantos'"></span> años, etc ¿Impresionante, no? 
           La función de chat hasta abajo la he desarrollado con Firebase. 
           En caso de que no resultase aparente, mi nombre es Pablo Iván G. Soto, tengo 14 años. 
           Tengo conocimientos de HTML5, CSS3 (no mucho, en realidad), JavaScript y algunos Frameworks de éste último, 
