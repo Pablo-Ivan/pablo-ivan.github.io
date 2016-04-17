@@ -1,4 +1,4 @@
-// AngularJS. Pablo Ivan G. Soto.
+// AngularJS. Pablo Ivan G. Soto. 2016.
 var app = angular.module('principal', ['ngStorage']);
 app.controller('MainCtrl', function($scope, $localStorage) {
   $scope.$storage = $localStorage;
