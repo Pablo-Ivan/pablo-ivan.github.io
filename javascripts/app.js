@@ -4,10 +4,6 @@ app.controller('MainCtrl', function($scope) {
   $scope.nombre = '';
   $scope.edad = '';
   $scope.correo = '';
-  localStorage.setItem("name", $scope.nombre);
-  localStorage.setItem("lastname", $scope.edad);
-  localStorage.getItem("name");
-  localStorage.getItem("lastname");
 });
 
 //HTTPS
