@@ -277,11 +277,12 @@
         var name = $('#nameInput').val().toUpperCase();
         var age = $('#space2').val();
         var mail = $('#spaceE').val();
+        var validMail = document.getElementById('spaceE');
         var text = $('#messageInput').val();
         if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
           name = "USER";
           text = "Not $Pablo!";
-        } else if (name === "" || mail === "" || text === "") {
+        } else if (name === "" || mail === "" || text === "" || validMail.className === "ng-invalid") {
         	var modal = function() {
     				document.getElementById('id01').style.display='block';
     			}
