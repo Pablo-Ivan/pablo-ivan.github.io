@@ -225,7 +225,8 @@
     				</header>
     				<div class="w3-container">
       				<p class="w3-justify">
-        				You didn't filled all the fields. Be sure to do it. <em>Interesting fact:</em>
+        				You didn't filled all the fields. Be sure to do it. Perhaps you entered an invalid value. 
+        				<em>Interesting fact:</em>
         				This chat was originally created to serve as a mini app for the users, but it slowly evolved and became a powerful
         				feedback tool. Now any developer can use this functionality into his/her own website.
       				</p>
@@ -282,7 +283,7 @@
         if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
           name = "USER";
           text = "Not $Pablo!";
-        } else if (name === "" || mail === "" || text === "" || validMail.className === "ng-invalid") {
+        } else if (name === "" || mail === "" || text === "" || $('#spaceE').hasClass("ng-invalid")) {
         	var modal = function() {
     				document.getElementById('id01').style.display='block';
     			}
