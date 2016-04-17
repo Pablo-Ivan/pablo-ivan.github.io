@@ -235,7 +235,8 @@
         <h2>Soporte</h2>
         <p class="w3-text-grey">
           ¿Tiene alguna pregunta? ¿sólo quiere saludar? Lo invito a utilizar los campos de abajo para dejar un mensaje en la página. 
-          Presione "Enviar" cuando haya finalizado su mensaje.
+          Presione "Enviar" cuando haya finalizado su mensaje. <br>
+          <em>Status:</em> {{chat || 'funcional'}}
         </p>
         <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="16" placeholder='Su Primer Nombre'>
         <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.correo" id="spaceE" maxlength="64" placeholder="Su Correo Electrónico" type="email">
@@ -284,6 +285,7 @@
       name = "USUARIO";
       text = "¡No soy $Pablo!";
     } else if (name === "" || text === "" || mail === "") {
+    	$scope.chat = "Completa los datos que faltan";
       return null;
     } else {
       console.log("Esto debería aparecer cuando el comentario sea válido, es decir...normalmente");
