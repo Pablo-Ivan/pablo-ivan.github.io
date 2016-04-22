@@ -2,6 +2,10 @@
   var app = angular.module('principal', ['ngStorage']);
   app.controller('MainCtrl', function($scope, $localStorage) {
     $scope.$storage = $localStorage.$default({ nombre: '', edad: '', correo: ''});
+    $scope.visitas = 1;
+    var visitors = function() {
+      $scope.visitas += 1;
+    }
   });
 //HTTPS
 var host = "pablo-ivan.github.io";
