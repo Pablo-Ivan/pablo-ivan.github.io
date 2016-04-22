@@ -3,7 +3,7 @@
   app.controller('MainCtrl', function($scope, $localStorage) {
     $scope.$storage = $localStorage.$default({ nombre: '', edad: '', correo: ''});
     $scope.visitas = 1;
-    var visitors = function() {
+    $scope.visitors = function() {
       $scope.visitas += 1;
     }
   });
