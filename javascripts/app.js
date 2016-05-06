@@ -5,10 +5,6 @@ Likely to be removed in future versions where Web Components allow me the same f
   var app = angular.module('principal', ['ngStorage']);
   app.controller('MainCtrl', function($scope, $localStorage) {
     $scope.$storage = $localStorage.$default({ nombre: '', edad: '', correo: ''});
-    $scope.visitas = 1;
-    $scope.visitors = function() {
-      $scope.visitas += 1;
-    }
   });
 //HTTPS
 var host = "pablo-ivan.github.io";
