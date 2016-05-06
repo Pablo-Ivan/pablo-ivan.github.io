@@ -1,2 +1,53 @@
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/webcomponents-lite.min.js"></script>
+  <base href="http://polygit.org/components/">
+  <link href="polymer/polymer.html" rel="import">
 </head>
+<body>
+  <dom-module id="nav-bar">
+    <template>
+      <ul class="w3-navbar w3-teal w3-card-4 w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+          <a class="w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="toogle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="w3-padding-large w3-white"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="w3-hide-small">
+          <a href="http://pablo-ivan.github.io/Alpha-System/" class="w3-padding-large w3-hover-white">Alpha</a>
+        </li>
+        <li class="w3-hide-small">
+          <a href="https://pablo-ivan.github.io/Predictive-Game/" class="w3-padding-large w3-hover-white">Pong</a>
+        </li>
+        <li class="w3-hide-small">
+          <a href="https://pablo-ivan.github.io/Recursive-Game/" class="w3-padding-large w3-hover-white">Toe</a>
+        </li>
+        <li class="w3-hide-small">
+          <a href="https://pablo-ivan.github.io/Diplomacy/" class="w3-padding-large w3-hover-white">Diplomacy</a>
+        </li>
+      </ul>
+      <!--navbar on small screens-->
+      <div id="demo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+        <ul class="w3-navbar w3-left-align w3-large w3-teal">
+          <li>
+            <a class="w3-padding-large" href="http://pablo-ivan.github.io/Alpha-System/">Alpha</a>
+          </li>
+          <li>
+            <a class="w3-padding-large" href="https://pablo-ivan.github.io/Predictive-Game/">Pong</a>
+          </li>
+          <li>
+            <a class="w3-padding-large" href="https://pablo-ivan.github.io/Recursive-Game/">Toe</a>
+          </li>
+          <li>
+            <a class="w3-padding-large" href="https://pablo-ivan.github.io/Diplomacy/">Diplomacy</a>
+          </li>
+        </ul>
+      </div>
+    </template>
+    <script>
+      Polymer
+    </script>
+  </dom-module>
+</body>
