@@ -1,4 +1,7 @@
-// AngularJS. Pablo Ivan G. Soto.
+/* 
+AngularJS. Pablo Ivan G. Soto.
+Likely to be removed in future versions where Web Components allow me the same functionality.
+*/
   var app = angular.module('principal', ['ngStorage']);
   app.controller('MainCtrl', function($scope, $localStorage) {
     $scope.$storage = $localStorage.$default({ nombre: '', edad: '', correo: ''});
