@@ -290,8 +290,7 @@
         var validMail = document.getElementById('spaceE');
         var text = $('#messageInput').val();
         if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
-          name = "USER";
-          text = "Not $Pablo!";
+          return null;
         } else if (name === "" || mail === "" || text === "" || $('#spaceE').hasClass("ng-invalid")) {
         	var modal = function() {
     				document.getElementById('id01').style.display='block';
