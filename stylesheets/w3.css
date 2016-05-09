@@ -1,4 +1,36 @@
 /* W3.CSS 2.52 by Jan Egil and Borge Refsnes. Do not remove this line */
+  	.ng-valid {
+  		color: #009688;
+  	}
+  	.ng-invalid {
+  		color: red;
+  	}
+  	::selection {
+			color: #216BF3;
+		}
+		-moz-::selection {
+			color: #216BF3;
+		}
+		-o-::selection {
+			color: #216BF3;;
+		}
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Lato", sans-serif
+    }
+    .w3-navbar, h1, button {
+      font-family: "Montserrat", sans-serif
+    }
+    p {
+      text-align: justify;
+    }
+    #messagesDiv {
+      max-height: 340px;
+      overflow: auto;
+    }
+    #messageInput {
+      height: 150px;
+      resize: vertical;
+    }
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
