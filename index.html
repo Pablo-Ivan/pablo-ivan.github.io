@@ -327,8 +327,7 @@
     var mail = $('#spaceE').val();
     var text = $('#messageInput').val();
     if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
-      name = "USUARIO";
-      text = "¡No soy $Pablo!";
+      return null;
     } else if (name === "" || text === "" || mail === "" || $('#spaceE').hasClass("ng-invalid")) {
     	var modal = function() {
     		document.getElementById('id01').style.display='block';
