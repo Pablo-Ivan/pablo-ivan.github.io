@@ -253,14 +253,21 @@
 <!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="javascripts/app.js"></script>
 		<script>
 			function toogle() {
  				document.getElementById("demo").classList.toggle("w3-show");
 			}
-      var myDataRef = new Firebase('https://alphatalken.firebaseio.com');
+			var config = {
+    		apiKey: "AIzaSyB31ARtbR4z766Tq5sChlRKfLKEcJYNF30",
+    		authDomain: "alphatalken.firebaseapp.com",
+    		databaseURL: "https://alphatalken.firebaseio.com",
+    		storageBucket: "alphatalken.appspot.com",
+  		};
+  		firebase.initializeApp(config);
+      var myDataRef = firebase.database().ref();
       var send = function() {
         var name = $('#nameInput').val().toUpperCase();
         var age = $('#space2').val();
