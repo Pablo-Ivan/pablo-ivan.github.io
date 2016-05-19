@@ -288,14 +288,22 @@
   <!--JavaScripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.0.0/firebase.js"><script>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="javascripts/app.js"></script>
   <script>
   function toogle() {
     document.getElementById("demo").classList.toggle("w3-show");
   }
-  var myDataRef = new Firebase('https://alphatalk.firebaseio.com');
+  var config = {
+    apiKey: "AIzaSyAr_gcP4-n9_M5MjXlLrUXI4hjd__v7om4",
+    authDomain: "alphatalk.firebaseapp.com",
+    databaseURL: "https://alphatalk.firebaseio.com",
+    storageBucket: "project-1765476389964612481.appspot.com",
+  };
+  firebase.initializeApp(config);
+  var myDataRef = firebase.database().ref();
+  
   var enviar = function() {
     var name = $('#nameInput').val().toUpperCase();
     var age = $('#space2').val();
@@ -328,7 +336,7 @@
     $('#messageInput').val('');
   }
   myDataRef.on('child_added', function(snapshot) {
-    var message = snapshot.val();
+    var message = snapshot.val;
     displayChatMessage(message.date, message.name, message.text);
   });
   function displayChatMessage(date, name, text) {
