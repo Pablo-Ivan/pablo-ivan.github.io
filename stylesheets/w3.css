@@ -10,7 +10,7 @@ p {
 }
 #messageInput {
   height: 150px;
-  resize: vertical;
+  resize: none;
 }
 #messagesDiv {
   max-height: 345px;
