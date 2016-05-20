@@ -1,3 +1,31 @@
+/*document-level styles*/
+.ng-valid {
+  color: #009688;
+}
+.ng-invalid {
+  color: red;
+}
+p {
+  text-align: justify;
+}
+#messageInput {
+  height: 150px;
+  resize: vertical;
+}
+#messagesDiv {
+  max-height: 345px;
+  overflow: auto;
+}
+::selection {
+  color: #216BF3;
+}
+-moz-::selection {
+  color: #216BF3;
+}
+-o-::selection {
+  color: #216BF3;
+}
+/*end document-level*/
 /* W3.CSS 2.64 by Jan Egil and Borge Refsnes. Do not remove this line */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
