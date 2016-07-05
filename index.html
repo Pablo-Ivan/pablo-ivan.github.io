@@ -102,8 +102,8 @@
   <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-one">
-        <h2 class="w3-blue w3-leftbar w3-rightbar w3-border-teal w3-center">301</h2> <!--acerca de-->
-        <!--<input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
+        <h2 class="w3-blue w3-leftbar w3-rightbar w3-border-teal w3-center">Acerca</h2>
+        <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id="space1" maxlength="15" placeholder="Su Primer Nombre">
         <input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.edad" id="space2" maxlength="3" placeholder="Su Edad">
         <p class="w3-text-grey">
           Bienvenido(a) a mi sitio web,
@@ -124,7 +124,7 @@
           por su parte en cuanto a Literatura moderna, disfruto de una buena novela de género policial o de misterio. 
           Edgar Allan Poe, Agatha Christie y sir Arthur Conan Doyle son grandes ejemplos. 
           Dejemos mi biografía y pasemos al propósito del sitio ¡La programación!
-        </p>-->
+        </p>
         <p class="w3-text-grey">
         	<div class="w3-center">
         		<img class="w3-round w3-margin w3-card-4" src="imperio.jpg" width="170px" height="200px">
@@ -323,14 +323,11 @@
   <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-two">
-        <h2 class="w3-blue w3-leftbar w3-rightbar w3-border-teal w3-center"> Dedicatorias</h2>
-        <!--<p class="w3-text-grey">
+        <h2 class="w3-blue w3-leftbar w3-rightbar w3-border-teal w3-center">Comentarios</h2>
+        <p class="w3-text-grey">
           ¿Tiene alguna pregunta? ¿sólo quiere saludar? Lo invito a utilizar los campos de abajo para dejar un mensaje en la página.
           Sus datos no serán utilizados para otro propósito mas que para poder escribir un mensaje.
           Presione "Enviar" cuando haya finalizado su mensaje.
-        </p>-->
-        <p class="w3-text-grey">
-        	A mis compañeros, escriban aquí lo más poético que puedan, algo que perdure en la memoria.
         </p>
         <!--modal-->
         <div id="id01" class="w3-modal">
@@ -345,8 +342,7 @@
         				<em>Dato Interesante:</em>
         				Este chat fue originalmente diseñado con el propósito de ser una mini aplicación para el usuario.
         				Sin embargo fue creciendo hasta convertirse en una poderosa herramienta para obtener las opiniones del visitante.
-        				Ahora cualquier desarrollador puede utilizar esta funcionalidad en su propio sitio web ¡Puede
-        				proceder!
+        				Ahora cualquier desarrollador puede utilizar esta funcionalidad en su propio sitio web ¡Puede proceder!
       				</p>
     				</div>
     				<footer class="w3-container w3-teal">
@@ -367,7 +363,7 @@
             <strong class="w3-text-blue">El Big Bang - $PABLO:</strong> 
             Sus comentarios aparecerán aquí. Si quieren contactarme, así sea para un comentario, 
             para felicitarme o incluso para contratarme (¡sería genial!), asegúrense de escribir su correo electrónico
-            en la parte de arriba y dejar un mensaje. Si eres del 301, puedes escribir tu dedicatoria en esta sección.
+            en la parte de arriba y dejar un mensaje.
           </div>
         </div>
         <!--end chat-->
@@ -383,7 +379,7 @@
     <a href="https://www.facebook.com/Pablo.Ivan.G.Soto" target="blank">
       <i class="w3-hover-text-light-blue w3-xlarge fa fa-facebook-official w3-show-inline-block"></i>
     </a>
-    <p class="w3-center">© 2015-2016. Pablo Iván G. Soto. <br> Última modificación: 27/Junio/2016.</p>
+    <p class="w3-center">© 2015-2016. Pablo Iván G. Soto. <br> Última modificación: 04/Julio/2016.</p>
   </footer>
   <!--JavaScripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -406,12 +402,12 @@
   
   var enviar = function() {
     var name = $('#nameInput').val().toUpperCase();
-    //var age = $('#space2').val();
+    var age = $('#space2').val();
     var mail = $('#spaceE').val();
     var text = $('#messageInput').val();
     if (name === "$PABLO" && mail !== "pabloivangomezsoto@gmail.com") {
       return null;
-    } else if (name === "" || text === "" || mail === "" || $('#spaceE').hasClass("ng-invalid")) {
+    } else if (name === "" || age === "" || text === "" || mail === "" || $('#spaceE').hasClass("ng-invalid")) {
     	var modal = function() {
     		document.getElementById('id01').style.display='block';
     	}
@@ -429,7 +425,7 @@
     myDataRef.push({
       date: date,
       name: name,
-      age: 14,
+      age: age,
       email: mail,
       text: text
     });
