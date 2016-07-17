@@ -259,7 +259,7 @@
   <script src="javascripts/app.js"></script>
 		<script>
 			function toogle() {
- 				$('#demo').classList.toggle('w3-show');
+ 				document.getElementById('demo').classList.toggle('w3-show');
 			}
 			var config = {
     		apiKey: "AIzaSyB31ARtbR4z766Tq5sChlRKfLKEcJYNF30",
@@ -278,7 +278,7 @@
           return null;
         } else if (name === "" || mail === "" || text === "" || $('#spaceE').hasClass("ng-invalid")) {
         	var modal = function() {
-    				$('#id01').style.display='block';
+    				document.getElementById('id01').style.display='block';
     			}
     			modal();
           return null;
