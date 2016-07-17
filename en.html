@@ -230,8 +230,8 @@
       <!--chat-->
       <div id='messagesDiv' class="w3-card w3-white w3-margin-top w3-justify">
         <div>
-          <strong class="w3-text-blue">The Big Bang - $PABLO:</strong> Your comments will appear here. 
-          If you want to contact me directly, be it for a general comment or even to hire me (would be great!), 
+          <strong class="w3-text-blue">The Big Bang - $PABLO:</strong> All your comments will appear here. 
+          If you wish to contact me directly, be it for a general talk or even to hire me (that would be great!), 
           make sure to write your email above and leave a reply, of course you can visit my 
           GitHub or Facebook profile. I'll contact you as soon as possible. 
         </div>
@@ -259,7 +259,7 @@
   <script src="javascripts/app.js"></script>
 		<script>
 			function toogle() {
- 				document.getElementById("demo").classList.toggle("w3-show");
+ 				$('#demo').classList.toggle('w3-show');
 			}
 			var config = {
     		apiKey: "AIzaSyB31ARtbR4z766Tq5sChlRKfLKEcJYNF30",
@@ -278,7 +278,7 @@
           return null;
         } else if (name === "" || mail === "" || text === "" || $('#spaceE').hasClass("ng-invalid")) {
         	var modal = function() {
-    				document.getElementById('id01').style.display='block';
+    				$('#id01').style.display='block';
     			}
     			modal();
           return null;
@@ -290,7 +290,7 @@
         var formatMonth = now.substring(4, 7);
         var formatYear = now.substring(11, 15);
         var formatTime = now.substring(16, 21);
-        var date = formatDay + "/" + formatMonth + "/" + formatYear + "(" + formatTime + ") ";
+        var date = formatDay + "/" + formatMonth + "/" + formatYear + " " + "(" + formatTime + ") ";
         myDataRef.push({
           date: date,
           name: name,
