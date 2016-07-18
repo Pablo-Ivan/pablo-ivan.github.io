@@ -220,7 +220,7 @@
 			<input class="w3-input w3-border-blue w3-round w3-center w3-text-teal" data-ng-model="$storage.nombre" id='nameInput' maxlength="15" placeholder='Your First Name'> 
       <input class="w3-input w3-border-blue w3-round w3-center" data-ng-model="$storage.correo" id="spaceE" maxlength="45" placeholder="Your Email" type="email">
       <textarea class="w3-input w3-border-blue w3-round w3-center w3-padding-xlarge w3-text-teal" id="messageInput" maxlength="512" placeholder="Your Message"></textarea>
-      <button class="w3-teal w3-round w3-btn-block w3-padding-large" onclick="send()">Send</button>
+      <button class="w3-teal w3-round w3-btn-block w3-padding-large" onclick="submit()">Submit</button>
       
       <!--chat-->
       <div id='messagesDiv' class="w3-card w3-white w3-margin-top w3-justify">
@@ -264,7 +264,7 @@
   		};
   		firebase.initializeApp(config);
       var myDataRef = firebase.database().ref();
-      var send = function() {
+      var submit = function() {
         var name = $('#nameInput').val().toUpperCase();
         var age = $('#space2').val();
         var mail = $('#spaceE').val();
