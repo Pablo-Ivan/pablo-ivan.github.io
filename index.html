@@ -1,1 +1,176 @@
-
+<!DOCTYPE html>
+<html data-ng-app="principal" data-ng-controller="MainCtrl" lang="es-MX">
+  <head>
+    <link href="pablo.jpg" rel="icon">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Un sitio web para exponer los proyectos de desarrollo web de Pablo Iván G. Soto.">
+    <title>Pablo Iván G. Soto</title>
+    
+    <link href="stylesheets/w3.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-67193166-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    <style>
+      body, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+      }
+      button, h1, .w3-navbar {
+        font-family: "Montserrat", sans-serif;
+      }
+      #header-img {
+        height: 160px;
+        width: 170px;
+      }
+      #mobile {
+        margin-top: 51px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--desktop navbar-->
+    <ul class="w3-card-4 w3-large w3-left-align w3-navbar w3-teal w3-top">
+      <li class="w3-hide-large w3-hide-medium w3-opennav w3-right">
+        <a class="w3-hover-white w3-large w3-padding-large w3-teal" href="javascript:void(0);" onclick="toogleNavbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+      <li>
+        <a class="w3-padding-large w3-white" href="javascript:void(0);">
+          <i class="fa fa-home"></i>
+        </a>
+      </li>
+      <li class="w3-hide-small">
+        <a class="w3-hover-white w3-padding-large" href="http://pablo-ivan.github.io/Alpha-System/">
+          Alpha
+        </a>
+      </li>
+      <li class="w3-hide-small">
+        <a class="w3-hover-white w3-padding-large" href="https://pablo-ivan.github.io/Diplomacy/">
+          Diplomacy
+        </a>
+      </li>
+      <li class="w3-hide-small">
+        <a class="w3-hover-white w3-padding-large" href="https://pablo-ivan.github.io/Predictive-Game/">
+          Pong
+        </a>
+      </li>
+      <li class="w3-hide-small">
+        <a class="w3-hover-white w3-padding-large" href="https://pablo-ivan.github.io/Recursive-Game/">
+          Toe
+        </a>
+      </li>
+      
+      <li class="w3-hide-small w3-right">
+        <a class="w3-hover-white w3-padding-large" href="blog/introduction.html">
+          Blog
+        </a>
+      </li>
+    </ul>
+    <!--end desktop navbar-->
+    
+    <!--mobile navbar-->
+    <div id="mobile" class="w3-card-4 w3-hide w3-hide-large w3-hide-medium w3-top">
+      <ul class="w3-large w3-left-align w3-navbar w3-teal">
+        <li>
+          <a class="w3-padding-large" href="http://pablo-ivan.github.io/Alpha-System/">
+            Alpha
+          </a>
+        </li>
+        <li>
+          <a class="w3-padding-large" href="https://pablo-ivan.github.io/Diplomacy/">
+            Diplomacy
+          </a>
+        </li>
+        <li>
+          <a class="w3-padding-large" href="https://pablo-ivan.github.io/Predictive-Game/">
+            Pong
+          </a>
+        </li>
+        <li>
+          <a class="w3-padding-large" href="https://pablo-ivan.github.io/Recursive-Game/">
+            Toe
+          </a>
+        </li>
+        
+        <li>
+          <a class="w3-padding-large" href="blog/introduction.html">
+            Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--end mobile navbar-->
+    
+    <!--header-->
+    <div class="w3-blue w3-center w3-container w3-padding-64">
+      <div class="w3-padding-64">
+        <h1 class="w3-jumbo w3-margin">Pablo Iván G. Soto</h1>
+        <img alt="Pablo Iván" class="w3-card-2 w3-hide-small w3-round" id="header-img" src="pablo.jpg">
+        <p class="w3-center w3-xlarge">Sitio de <br> Desarrollo Web</p>
+        
+        <a href="javascript:void(0);">
+          <button class="w3-btn w3-ripple w3-white w3-bottombar w3-border-teal w3-leftbar w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">
+            Español
+          </button>
+        </a>
+        <a href="en">
+          <button class="w3-btn w3-white w3-bottombar w3-border-teal w3-leftbar w3-padding-xlarge w3-large w3-margin-top w3-hover-cyan">
+            English
+          </button>
+        </a>
+      </div>
+    </div>
+    <!--end header-->
+    
+    <!--about-->
+    <div class="w3-container w3-light-grey w3-padding-64 w3-row-padding">
+      <div class="w3-content">
+        <div class="w3-one">
+          <h2 class="w3-blue w3-border-teal w3-center w3-leftbar w3-rightbar">Acerca de</h2>
+          <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal" 
+                data-ng-model="$storage.nombre" id="name-input" maxlength="15" placeholder="Su Primer Nombre">
+          <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal"
+                id="age-input"maxlength="3" placeholder="Su Edad">
+          
+          <p class="w3-text-grey">
+            Bienvenido a mi sitio web,
+            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'usuario'"></span>.
+            Este es lugar para hacer muestra de mis programas.
+            Dejo a su disposición mis proyectos de Desarrollo Web
+            ¿<span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'Usted'"></span>
+            ha notado que conforme escribía su nombre, el sitio se actualizaba? Impresionante ¿no?
+            La modalidad de chat hasta abajo la he desarrollado con Firebase.
+            
+            En caso de que no resultase aparente, mi nombre es Pablo Iván Gómez Soto, 
+            tengo 14 años. Soy experimentado en tecnologías como HTML, CSS, Javascript
+            y algunos frameworks como AngularJS, Angular 2 y Polymer.
+            Soy un ávido lector, me apasiona la Historia, la Literatura y las Matemáticas.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end about-->
+  </body>
+</html>
