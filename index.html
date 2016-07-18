@@ -406,7 +406,7 @@
       };
 
       firebase.initializeApp(config);
-      var myDataRed = firebase.database().red();
+      var myDataRef = firebase.database().ref();
 
       var enviar = function() {
         var nombre = $('#name-input').val().toUpperCase();
