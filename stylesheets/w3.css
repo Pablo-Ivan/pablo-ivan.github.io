@@ -8,11 +8,11 @@
 p {
   text-align: justify;
 }
-#messageInput {
+#message-input {
   height: 150px;
   resize: none;
 }
-#messagesDiv {
+#messages-div {
   max-height: 345px;
   overflow: auto;
   padding: 5px;
