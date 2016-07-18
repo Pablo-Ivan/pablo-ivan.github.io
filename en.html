@@ -402,21 +402,21 @@
       var myDataRef = firebase.database().ref();
 
       var submit = function() {
-        var nombre = $('#chat-name-input').val().toUpperCase();
-        var edad = $('#age-input').val();
-        var correo = $('#chat-mail-input').val();
-        var mensaje = $('#chat-message-input').val();
+        var name = $('#chat-name-input').val().toUpperCase();
+        var age = $('#age-input').val();
+        var email = $('#chat-mail-input').val();
+        var message = $('#chat-message-input').val();
   
-        if (nombre === '$PABLO' && correo !== 'pabloivangomezsoto@gmail.com') {
+        if (name === '$PABLO' && email !== 'pabloivangomezsoto@gmail.com') {
           return null;
-        } else if (nombre === '' || edad === '' || mensaje === '' || correo === '' || $('#chat-mail-input').hasClass('ng-invalid')) {
+        } else if (name === '' || age === '' || message === '' || email === '' || $('#chat-mail-input').hasClass('ng-invalid')) {
           var modal = function() {
             document.getElementById('chat-modal').style.display='block';
           }
           modal();
           return null;
         } else {
-          console.log('¡Comentario enviado!');
+          console.log('Comment sent!');
         }
   
         var now = new Date().toString();
@@ -428,28 +428,27 @@
   
         myDataRef.push({
           date: finalDate,
-          name: nombre,
-          age: edad,
-          email: correo,
-          text: mensaje
+          name: name,
+          age: age,
+          email: email,
+          text: message
         });
         $('chat-message-input').val('');
       }
 
       myDataRef.on('child_added', function(snapshot) {
-        var comentario = snapshot.val();
-        mostrarMensaje(comentario.date, comentario.name, comentario.text);
+        var comment = snapshot.val();
+        showMessage(comment.date, comment.text, comment.name);
       });
 
-      var mostrarMensaje = function(fecha, nombre, mensaje) {
-        $('<div/>').text(mensaje).prepend($('<strong class="w3-text-blue"/>').text(fecha + ' - ' + nombre + ': ')).appendTo($('#messages-div'));
+      var mostrarMensaje = function(date, message, name) {
+        $('<div/>').text(message).prepend($('<strong class="w3-text-blue"/>').text(date + ' - ' + name + ': ')).appendTo($('#messages-div'));
         $('#messages-div')[0].scrollTop = $('#messages-div')[0].scrollHeight;
       }
     </script>
     <!--end scripts-->
     <noscript>
-      La página que está viendo requiere el uso de JavaScript para su funcionamiento. 
-      Por favor, actívelo.
+      The website you are on requires JavaScript, please turn it on.
     </noscript>
   </body>
 </html>
