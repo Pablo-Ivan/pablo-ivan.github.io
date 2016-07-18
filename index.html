@@ -151,7 +151,7 @@
           <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal" 
                 data-ng-model="$storage.nombre" id="name-input" maxlength="15" placeholder="Su Primer Nombre">
           <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal"
-                id="age-input"maxlength="3" placeholder="Su Edad">
+                id="age-input" maxlength="3" placeholder="Su Edad">
           
           <p class="w3-text-grey">
             Bienvenido a mi sitio web,
@@ -318,9 +318,17 @@
         <div class="w3-container">
           <p class="w3-justify">
             No ha completado todos los campos o ingresó un dato inválido,
-            asegúrese de revisar los campos.
+            asegúrese de revisar los campos. <em>Dato Interesante:</em>
+            Este chat fue originalmente diseñado con el propósito de ser una
+            mini aplicación para el usuario. Sin embargo fue creciendo hasta
+            convertirse en una poderosa herramienta para obtener las opiniones
+            del visitante. Ahora cualquier desarrollador puede utilizar esta
+            funcionalidad en su propio sitio web ¡Puede proceder!
           </p>
         </div>
+        <footer class="w3-container w3-teal">
+          <p class="w3-center">Pablo Iván G. Soto</p>
+        </footer>
       </div>
     </div>
     <!--end modal-->
@@ -337,9 +345,59 @@
             poder escribir un mensaje. Presione 'Enviar' cuando haya
             finalizado su mensaje.
           </p>
+          
+          <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal" 
+                data-ng-model="$storage.nombre" id="chat-name-input" maxlength="15" placeholder="Su Primer Nombre">
+          <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal"
+                data-ng-model="$storage.correo" id="chat-mail-input" maxlength="50" placeholder="Su Correo Electrónico" type="email">
+          <textarea class="w3-border-blue w3-center w3-input w3-padding-xlarge w3-text-teal"
+                id="chat-message-input" maxlength="512" placeholder="Su Comentario"></textarea>
+          <button class="w3-btn-block w3-padding-large w3-round w3-teal" onclick="enviar()">
+            Enviar
+          </button>
+          
+          <div class="w3-card w3-justify w3-margin-top w3-white" id="messages-div">
+            <div>
+              <strong class="w3-text-blue">El Big Bang - $PABLO:</strong>
+              Sus comentarios aparecerán aquí. Si quieren contactarme,
+              así sea para una nota o incluso para contratarme (¡sería genial!)
+              asegúrense de escribir su correo electrónico en la parte de arriba y
+              dejar un mensaje. También puedes visitar mi perfil en GitHub o Facebook.
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
     <!--end chat-->
+    
+    <!--footer-->
+    <footer class="w3-center w3-container w3-padding-16 w3-teal">
+      <a href="https://github.com/Pablo-Ivan/" target="blank">
+        <i class="fa fa-github w3-hover-text-light-blue w3-show-inline-block w3-xlarge"></i>
+      </a>
+      <a href="https://www.facebook.com/Pablo.Ivan.G.Soto" target="blank">
+        <i class="fa fa-facebook w3-hover-text-light-blue w3-show-inline-block w3-xlarge"></i>
+      </a>
+      <p class="w3-center">
+        © 2015-2016. Pablo Iván G. Soto. <br>
+        Última modificación: 18/Julio/2016.
+      </p>
+    </footer>
+    <!--end footer-->
+    
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+    <script src="javascripts/angular-app.js"></script>
+    <script src="javascripts/app.js"></script>
+    <!--end scripts-->
+    <noscript>
+      La página que está viendo requiere el uso de JavaScript para su funcionamiento. 
+      Por favor, actívelo.
+    </noscript>
   </body>
 </html>
