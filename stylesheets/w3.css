@@ -1,4 +1,4 @@
-/*Document-level Styles*/
+/*document level*/
 .ng-valid {
   color: #009688;
 }
@@ -13,7 +13,7 @@ p {
   resize: none;
 }
 #messages-div {
-  max-height: 345px;
+  max-height: 355px;
   overflow: auto;
   padding: 5px;
   border-radius: 5px;
@@ -28,6 +28,7 @@ p {
   color: #216BF3;
 }
 /*end document-level*/
+
 /* W3.CSS 2.7 by Jan Egil and Borge Refsnes */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
