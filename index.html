@@ -166,11 +166,180 @@
             tengo 14 años. Soy experimentado en tecnologías como HTML, CSS, Javascript
             y algunos frameworks como AngularJS, Angular 2 y Polymer.
             Soy un ávido lector, me apasiona la Historia, la Literatura y las Matemáticas.
+            Me encanta el arte renacentista, soy un seguidor de la música barroca y clasicista,
+            mi compositor favorito es indudablemente Schubert.
             
+            En cuanto a la Literatura, mis autores favoritos son Miguel de Cervantes y
+            Dante Alighieri; por su parte en la Literatura moderna, disfruto de una buena
+            novela de misterio o de género policial. Edgar Allan Poe, Agatha Christie y
+            sir Arthur Conan Doyle son grandes ejemplos.
+            Dejemos mi biografía y pasemos al propósito del sitio ¡El Desarrollo Web!
           </p>
+          
+          <div class="w3-center">
+            <img class="w3-card-2 w3-margin w3-round" src="anel.jpg" height="160px" width="210px">
+            <img class="w3-card-2 w3-margin w3-round" src="annayxime.jpg" height="160px" width="210px">
+            <img class="w3-card-2 w3-margin w3-round" src="amanda.jpg" height="160px" width="210px">
+            <img class="w3-card-2 w3-margin w3-round" src="vane.jpg" height="160px" width="210px">
+          </div>
+          <h2>¡Gracias por ser 301!</h2>
+          
         </div>
       </div>
     </div>
     <!--end about-->
+    
+    <!--portfolio-->
+    <div class="w3-container w3-padding-32 w3-row-padding">
+      <div class="w3-content">
+        <div class="w3-two">
+          <h2 class="w3-blue w3-border-teal w3-center w3-leftbar w3-rightbar">Portafolio</h2>
+          
+          <h4>
+            <a class="w3-hover-text-blue w3-text-teal" href="https://pablo-ivan.github.io">
+              Alpha System
+            </a>
+          </h4>
+          <p class="w3-text-grey">
+            Alpha es un sistema neuronal escrito en AIML.
+            Básicamente asimila el lenguaje humano y lo convierte en una instrucción procesable.
+            El lenguage <em>AIML</em> (Artificial Intelligence Markup Language) 
+            es una extensión de <em>HTML</em>, mismo en que la web está escrita.
+            Se le llama lenguage de marcado debido a que todas las intruccionas van entre etiquetas, 
+            diferenciándose de un lenguaje íntegro de programación. 
+            Su núcleo se basa en una relación categoría&gt;patrón&gt;respuesta, 
+            siendo el patrón lo que el usuario escribe. 
+            Las respuestas de Alpha se encuentran en inglés por motivos de accesibilidad. 
+            He aquí algunos ejemplos de código en AIML:
+          </p>
+          <pre class="w3-border-teal w3-card-2 w3-code w3-leftbar w3-rightbar w3-text-blue">
+            <code>
+              &lt;&#63;xml version=&#8220;1.0&#8221; encoding=&#8220;UTF&#8211;8&#8221;&#63;&gt;
+              &#32;&#32;&lt;aiml version=&#8220;2.0&#8221;&gt;
+              &#32;&#32;&#32;&#32;&lt;category&gt;
+              &#32;&#32;&#32;&#32;&#32;&#32;&lt;pattern&gt;Hello&lt;&#47;pattern&gt;
+              &#32;&#32;&#32;&#32;&#32;&#32;&lt;template&gt;Hi, user!&lt;&#47;template&gt;
+              &#32;&#32;&#32;&#32;&lt;&#47;category&gt;
+              &#32;&#32;&#32;&#32;&lt;category&gt;
+              &#32;&#32;&#32;&#32;&#32;&#32;&lt;pattern&gt;Who are you&lt;&#47;pattern&gt;
+              &#32;&#32;&#32;&#32;&#32;&#32;&lt;template&gt;I am Alpha&lt;&#47;template&gt;
+              &#32;&#32;&#32;&#32;&lt;&#47;category&gt;
+              &#32;&#32;&lt;&#47;aiml&gt;
+              &lt;&#47;&#63;xml&gt;</code></pre>
+          <p class="w3-text-grey">
+            Le explicaré cómo funciona. La primera línea 
+            (en dónde se específica la versión de <em>XML</em> y su codificación)
+            se conoce como <em>prolog</em>, esta línea le indica al navegador que está ante 
+            una versión estandarizada (que cumple con las especificaciones originales) de XML.
+            A continuación viene la etiqueta &lt;aiml&gt;, 
+            esta etiqueta está <em>dentro</em> del <em>prolog</em>; 
+            en términos de programación a esto se le llama &#8220;nesting&#8221; y 
+            significa que el <em>prolog</em> es la etiqueta
+            <em>padre</em> de la etiqueta aiml. A continuación viene la etiqueta &lt;category&gt;, 
+            una categoría es un par pregunta-respuesta, siendo la etiqueta &lt;pattern&gt; 
+            lo que el usuario pregunta y &lt;template&gt; lo que el sistema responde.
+          </p>
+          
+          <h4>
+            <a class="w3-hover-text-blue w3-text-teal" href="https://pablo-ivan.github.io/Diplomacy/">
+              Diplomacy
+            </a>
+          </h4>
+          <p class="w3-text-grey">
+            Diplomacy es un proyecto que surge con la necesidad de un producto
+            para una actividad escolar relacionada a la mercadotecnia.
+            El equipo completo lo constituimos Aldo G. Cabrera Aguilera (Diseño),
+            Erick Mauricio M. Valdéz (Investigación de Mercado), 
+            Elioth Fernando R. Rodríguez (Publicidad),
+            usted como el usuario final y, naturalmente, yo en el Desarrollo.
+            Está orientada a los estudiantes de secundaria,
+            permitiéndoles practicar las materias que ellos elijan.
+            
+            Al integrarla con Alpha System, la aplicación se convierte en una
+            base de datos colosal, pues el usuario tiene la capacidad de realizar 
+            cualquier pregunta relacionada con una materia de estudio.
+            También contará con una segunda versión, que es la "Versión para Profesores",
+            en esta los docentes podrán monitorear las cuentas de los estudiantes
+            y distribuir sus ejercicios.
+          </p>
+          
+          <h4>
+            <a class="w3-hover-text-blue w3-text-teal" href="https://pablo-ivan.github.io/Predictive-Game/">
+              Pong
+            </a>
+          </h4>
+          <p class="w3-text-grey">
+            Pong, el famoso juego de Atari, lo he rediseñado para que sea compatible
+            con tecnologías más recientes. La mecánica es la misma,
+            a diferencia que aquí el oponente es invencible.
+            Diseñé el juego con un elemento &lt;canvas&gt;, que es propio de HTML
+            para dibujar un lienzo en la página web.
+            
+            Para que el adversario pueda predecir los movimientos de la pelota,
+            ejecuta un algoritmo geométrico que emplea el método cartesiano para
+            encontrar las coordenadas de la pelota correctas.
+            Claro que en algún punto puede perder sólo por una cosa:
+            la velocidad de la pelota. En cualquier momento la pelota se moverá
+            más rápido que Alpha y este perderá, si antes no ha perdido usted.
+            Como su desarrollador, he vencido a mi juego sólo una vez, y fue
+            por un error en el sistema de la AI.
+          </p>
+          
+          <h4>
+            <a class="w3-hover-text-blue w3-text-teal" href="https://pablo-ivan.github.io/Recursive-Game/">
+              Toe
+            </a>
+          </h4>
+          <p class="w3-text-grey">
+            Este clásico juego 'Tic Tac Toe' fue mi primer proyecto que integra 
+            HTML, CSS y JavaScript. Al igual que en Pong, el usuario tendrá un
+            oponente invencible. Su funcionamiento se basa en un algoritmo de
+            teoría de juegos llamado <em>Minimax</em>; se le llama así por la
+            mínima posibilidad de que el jugador gane y la máxima posibilidad
+            de que la computadora gane. Debo confesar que pese a haber
+            desarrollado el juego, nunca he sido capaz de vencerlo.
+            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'Usuario'"></span>, 
+            ¿está seguro(a) de poder ganar? <em>Nota:</em> Toe está siendo
+            rediseñado para alinearse a los estilos del sitio web.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--end portfolio-->
+    
+    <!--modal-->
+    <div id="chat-modal" class="w3-modal">
+      <div class="w3-animate-zoom w3-card-2 w3-modal-content">
+        <header class="w3-center w3-container w3-teal">
+          <span onclick="document.getElementById('chat-modal').style.display='none'" class="w3-closebtn">&times;</span>
+          <h2>Chat</h2>
+        </header>
+        <div class="w3-container">
+          <p class="w3-justify">
+            No ha completado todos los campos o ingresó un dato inválido,
+            asegúrese de revisar los campos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end modal-->
+    
+    <!--chat-->
+    <div class="w3-container w3-light-grey w3-padding-64 w3-row-padding">
+      <div class="w3-content">
+        <div class="w3-two">
+          <h2 class="w3-blue w3-border-teal w3-center w3-leftbar w3-rightbar">Comentarios</h2>
+          <p class="w3-text-grey">
+            ¿Tiene alguna pregunta? ¿sólo quiere saludar? Lo invito a utilizar
+            los campos de abajo para dejar un mensaje en el sitio.
+            Sus datos no serán utilizados para otro propósito mas que para
+            poder escribir un mensaje. Presione 'Enviar' cuando haya
+            finalizado su mensaje.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end chat-->
   </body>
 </html>
