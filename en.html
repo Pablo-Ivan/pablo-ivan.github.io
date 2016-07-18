@@ -441,7 +441,7 @@
         showMessage(comment.date, comment.text, comment.name);
       });
 
-      var mostrarMensaje = function(date, message, name) {
+      var showMessage = function(date, message, name) {
         $('<div/>').text(message).prepend($('<strong class="w3-text-blue"/>').text(date + ' - ' + name + ': ')).appendTo($('#messages-div'));
         $('#messages-div')[0].scrollTop = $('#messages-div')[0].scrollHeight;
       }
