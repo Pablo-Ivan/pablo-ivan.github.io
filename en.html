@@ -192,16 +192,14 @@
             </a>
           </h4>
           <p class="w3-text-grey">
-            Alpha es un sistema neuronal escrito en AIML.
-            Básicamente asimila el lenguaje humano y lo convierte en una instrucción procesable.
-            El lenguage <em>AIML</em> (Artificial Intelligence Markup Language) 
-            es una extensión de <em>HTML</em>, mismo en que la web está escrita.
-            Se le llama lenguage de marcado debido a que todas las intruccionas van entre etiquetas, 
-            diferenciándose de un lenguaje íntegro de programación. 
-            Su núcleo se basa en una relación categoría&gt;patrón&gt;respuesta, 
-            siendo el patrón lo que el usuario escribe. 
-            Las respuestas de Alpha se encuentran en inglés por motivos de accesibilidad. 
-            He aquí algunos ejemplos de código en AIML:
+            Alpha is a neuronal system written in AIML. 
+            Basically assimilates human language and makes it an indictable command.
+            The language AIML (Artificial Intelligence Markup Language) is an extension of HTML, 
+            the same in which the web is written. It is called markup language because all the instruccions 
+            go between labels, differentiating a full programming language.
+            Its core is based on a category > pattern > response relationship, 
+            with the pattern being what the user types. Alpha responses are in English for accessibility purposes. 
+            Here are some examples of code in AIML:
           </p>
           <pre class="w3-border-teal w3-card-2 w3-code w3-leftbar w3-rightbar w3-text-blue">
 <code>&lt;&#63;xml version=&#8220;1.0&#8221; encoding=&#8220;UTF&#8211;8&#8221;&#63;&gt;
@@ -217,17 +215,14 @@
 &#32;&#32;&lt;&#47;aiml&gt;
 &lt;&#47;&#63;xml&gt;</code></pre>
           <p class="w3-text-grey">
-            Le explicaré cómo funciona. La primera línea 
-            (en dónde se específica la versión de <em>XML</em> y su codificación)
-            se conoce como <em>prolog</em>, esta línea le indica al navegador que está ante 
-            una versión estandarizada (que cumple con las especificaciones originales) de XML.
-            A continuación viene la etiqueta &lt;aiml&gt;, 
-            esta etiqueta está <em>dentro</em> del <em>prolog</em>; 
-            en términos de programación a esto se le llama &#8220;nesting&#8221; y 
-            significa que el <em>prolog</em> es la etiqueta
-            <em>padre</em> de la etiqueta aiml. A continuación viene la etiqueta &lt;category&gt;, 
-            una categoría es un par pregunta-respuesta, siendo la etiqueta &lt;pattern&gt; 
-            lo que el usuario pregunta y &lt;template&gt; lo que el sistema responde.
+            Let me explain to you how this works. The first line 
+            (where <em>XML</em> version and codification is specified) is known as <em>prolog</em>, 
+            this line indicates the browser that is a standarized XML file.
+            Then there is the &lt;aiml&gt; tag, this tag is <em>inside</em> the <em>prolog</em>;
+            this is what developers call &#8220;nesting&#8221;, that means the <em>prolog</em> is the
+            <em>parent</em> tag of the aiml one. At next it comes the &lt;category&gt; tag,
+            a category is a question-answer relationship, being the &lt;pattern&gt; tag
+            the user's question and the &lt;template&gt; Alpha's answer.
           </p>
           
           <h4>
@@ -236,21 +231,15 @@
             </a>
           </h4>
           <p class="w3-text-grey">
-            Diplomacy es un proyecto que surge con la necesidad de un producto
-            para una actividad escolar relacionada a la mercadotecnia.
-            El equipo completo lo constituimos Aldo G. Cabrera Aguilera (Diseño),
-            Erick Mauricio M. Valdéz (Investigación de Mercado), 
-            Elioth Fernando R. Rodríguez (Publicidad),
-            usted como el usuario final y, naturalmente, yo en el Desarrollo.
-            Está orientada a los estudiantes de secundaria,
-            permitiéndoles practicar las materias que ellos elijan.
-            
-            Al integrarla con Alpha System, la aplicación se convierte en una
-            base de datos colosal, pues el usuario tiene la capacidad de realizar 
-            cualquier pregunta relacionada con una materia de estudio.
-            También contará con una segunda versión, que es la "Versión para Profesores",
-            en esta los docentes podrán monitorear las cuentas de los estudiantes
-            y distribuir sus ejercicios.
+            Diplomacy is a project that comes with the need for a product for a school activity 
+            related to marketing. The full team is constituted by Aldo G. Cabrera Aguilera (Design), 
+            Erick Mauricio M. Valdez (Market Research), Elioth Fernando R. Rodriguez (Advertising), 
+            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'you'"></span> (End User) 
+            and naturally, me, Pablo Ivan G. Soto (Development). It is aimed at high school students, 
+            enabling them to practice the subjects they choose. By integrating it with Alpha System, 
+            the application becomes a huge data base, as the user has the ability to perform any questions 
+            regarding a subject of study. It will also feature a second version, which is the "Teachers version". 
+            In this version teachers can monitor student accounts and distribute their exercises.
           </p>
           
           <h4>
@@ -259,20 +248,14 @@
             </a>
           </h4>
           <p class="w3-text-grey">
-            Pong, el famoso juego de Atari, lo he rediseñado para que sea compatible
-            con tecnologías más recientes. La mecánica es la misma,
-            a diferencia que aquí el oponente es invencible.
-            Diseñé el juego con un elemento &lt;canvas&gt;, que es propio de HTML
-            para dibujar un lienzo en la página web.
-            
-            Para que el adversario pueda predecir los movimientos de la pelota,
-            ejecuta un algoritmo geométrico que emplea el método cartesiano para
-            encontrar las coordenadas de la pelota correctas.
-            Claro que en algún punto puede perder sólo por una cosa:
-            la velocidad de la pelota. En cualquier momento la pelota se moverá
-            más rápido que Alpha y este perderá, si antes no ha perdido usted.
-            Como su desarrollador, he vencido a mi juego sólo una vez, y fue
-            por un error en el sistema de la AI.
+            Pong, the famous Atari game. I've redesigned to be fully compatible with HTML5 technologies. 
+            The mechanics are the same, unlike here the opponent is invincible. 
+            I wrote the game inside a canvas tag, which is proper to draw a canvas on a HTML website. 
+            For the adversary to predict the movements of the ball, 
+            it runs a geometric algorithm that uses the Cartesian method to find the correct coordinates. 
+            Of course at some point it may lose only for one thing: the speed of the ball. 
+            At any time the ball will move faster than Alpha and this will make him lose...if you haven't, of course. 
+            As its developer, I have beaten my game only once, and was due to an error in the AI.
           </p>
           
           <h4>
@@ -281,16 +264,13 @@
             </a>
           </h4>
           <p class="w3-text-grey">
-            Este clásico juego 'Tic Tac Toe' fue mi primer proyecto que integra 
-            HTML, CSS y JavaScript. Al igual que en Pong, el usuario tendrá un
-            oponente invencible. Su funcionamiento se basa en un algoritmo de
-            teoría de juegos llamado <em>Minimax</em>; se le llama así por la
-            mínima posibilidad de que el jugador gane y la máxima posibilidad
-            de que la computadora gane. Debo confesar que pese a haber
-            desarrollado el juego, nunca he sido capaz de vencerlo.
-            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'Usuario'"></span>, 
-            ¿está seguro(a) de poder ganar? <em>Nota:</em> Toe está siendo
-            rediseñado para alinearse a los estilos del sitio web.
+            This classic game 'Tic Tac Toe' was my first project that integrates HTML, CSS and JavaScript. 
+            Just like in Pong, the user will have an invincible opponent. 
+            Its operations are based on an algorithm called Minimax game theory; 
+            It is so called by the Minimum possibility the player wins and the Maximum possibility the computer wins. 
+            I must confess that despite having programmed the game, I've never been able to beat him. 
+            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'User'"></span>,
+            are you capable of winning. Note: Toe is being redesigned to complement the styles of the website.
           </p>
           
           <hr>
@@ -341,10 +321,9 @@
         <div class="w3-two">
           <h2 class="w3-blue w3-border-teal w3-center w3-leftbar w3-rightbar">Comments</h2>
           <p class="w3-text-grey">
-            Have a question? Just want to say hello? I invite you to use
-            the form below to leave a message on the website.
-            Your information won't be used for any other purpose than being able to write
-            your message. Press 'Submit' when your message is ready to be...submitted.
+            Have any questions? Just want to say hello? You can use the form below to leave a public message.
+            Your data is <em>safe</em> and won't be used for any other purpose than being able to reply.
+            Press 'Submit' when your message is ready to be...submitted.
           </p>
           
           <input class="w3-border-blue w3-center w3-input w3-round w3-text-teal" 
