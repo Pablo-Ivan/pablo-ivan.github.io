@@ -15,4 +15,4 @@ My Projects:
 * Diplomacy
 * PS-doku
 
-Right now I'm migrating from AngularJS to Angular 2.
+Right now I'm migrating from Angular 1 to Angular 2.
