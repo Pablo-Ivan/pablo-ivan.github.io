@@ -1,5 +1,5 @@
 # Pablo Ivan G. Soto
-A website with some interactivity to showcase my projects. 
+An interactive website to showcase my projects. 
 The stack:
 * AngularJS for the binding and the localStorage.
 * jQuery for appending the chat section.
