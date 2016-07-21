@@ -6,7 +6,7 @@ The stack:
 * Firebase for actually creating the chat section.
 * FontAwesome for adding some icons.
 * W3.css for adding a fresh and lightweight css library based on Google's Material Design.
-* Google Analytics for, well, analytics.
+* Google Analytics for... well, analytics.
 
 My Projects:
 * Alpha System
@@ -14,3 +14,5 @@ My Projects:
 * Alpha Toe
 * Diplomacy
 * PS-doku
+
+Right now I'm migrating from AngularJS to Angular 2.
