@@ -431,9 +431,10 @@
   
         if (nombre === '$PABLO' && correo !== 'pabloivangomezsoto@gmail.com') {
           return null;
-        } else if (nombre === '' || edad === '' || mensaje === '' || $('#chat-mail-input').hasClass('ng-invalid')) {
+        } else if (nombre === '' || edad === '' || mensaje === '') {
           var modal = function() {
             document.getElementById('chat-modal').style.display='block';
+            console.log('Algunos campos faltantes.');
           }
           modal();
           return null;
