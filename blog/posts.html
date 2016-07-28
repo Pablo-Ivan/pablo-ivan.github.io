@@ -120,7 +120,6 @@
             Introducción - 28 de Julio, 2016
           </h2>
           <p class="w3-text-grey">
-            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'usuario'"></span>
             Introducción ¿en verdad le he puesto ese título al que será recordado como mi primer blog?
             Algo convencional y estructurado, características muy características de mí como habrán notado
             por todo el sitio web al hablarles formalmente ¿Acaso no son así todos los blogs profesionales?
@@ -130,10 +129,19 @@
             De acuerdo, pasemos a lo serio. Escribo porque, comenzando, escribir es un hábito fenomenal
             (espero no encontrarme con los hermanos alemanes cuando llegue a la vejez), porque todas esas ideas rondando sin un
             punto de destino pueden ser estructuradas aquí, escribo porque escribo al fin y al cabo. Escribo sobre lo que observo, 
-            sobre lo que pienso y sobre lo que haré. 
+            sobre lo que pienso y sobre lo que haré.
+            
             <br><br>
-            Empecemos con una breve introducción a la construcción de mi sitio web
-            ¿Introducción? Ah, sí...ahora el título tiene sentido. Un panorama general: las diversas ramas de la programación.
+            
+            <span data-ng-bind="$storage.nombre.toLowerCase().capitalize() || 'Usuario'"></span>, 
+            empecemos con una breve introducción a la construcción de mi sitio web.
+            Espera... ¿qué? Si escribieron su nombre en la página principal aparece aquí ¿cómo?
+            Básicamente creé una referencia a una <em>variable</em> en donde almacené sus nombres,
+            luego sencillamente puse la referencia aquí también. Suena confuso al principio, lo sé (¿qué es una variable?).
+            No se preocupen, iremos examinando a detalle esta terminología. Ahora leerán el panorama del Desarrollo Web.
+            
+            <br><br>
+            
             Si digo que hay cientos de ramas...bueno, estaría exagerando. Sin embargo sí hay veintenas de ellas; está
             la Criptografía Digital, El Desarrollo Web, el Desarrollo Móvil, Desarrollo "Full Stack" (significa que dominas
             muchas ramas) etc. Yo, por ejemplo, me enfoco en el área del Desarrollo Web. 
