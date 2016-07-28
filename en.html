@@ -396,9 +396,10 @@
   
         if (name === '$PABLO' && email !== 'pabloivangomezsoto@gmail.com') {
           return null;
-        } else if (name === '' || age === '' || message === '' || $('#chat-mail-input').hasClass('ng-invalid')) {
+        } else if (name === '' || age === '' || message === '') {
           var modal = function() {
             document.getElementById('chat-modal').style.display='block';
+            console.log('Some fields are missing.');
           }
           modal();
           return null;
