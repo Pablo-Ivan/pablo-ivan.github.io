@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Stable and Valid. 28/07/2016.-->
+<!--Stable and Valid. 30/07/2016.-->
 <html data-ng-app="principal" data-ng-controller="MainCtrl" lang="en">
   <head>
     <link href="pablo.jpg" rel="icon">
@@ -283,7 +283,7 @@
           <p class="w3-text-grey">
             This is a secondary project, that's why it is not included in the navigation bar.
             PS-Doku is a system designed to solve Sudokus. If you want me to write a tutorial
-            about this project, leave a comment.
+            about this project, leave a comment. Its source code is available on GitHub.
             Stay tuned!
           </p>
           
@@ -361,7 +361,7 @@
       </a>
       <p class="w3-center">
         © 2015-2016. Pablo Ivan G. Soto. <br>
-        Last modified: July 28, 2016.
+        Last modified: July 30, 2016.
       </p>
     </footer>
     <!--end footer-->
@@ -412,7 +412,7 @@
         var formatMonth = now.substring(4, 7);
         var formatYear = now.substring(11, 15);
         var formatTime = now.substring(16, 21);
-        var finalDate = formatDay + "/" + formatMonth + "/" + formatYear + " " + "(" + formatTime + ") ";
+        var finalDate = `${formatDay}/${formatMonth}/${formatYear} (${formatTime})`;
   
         myDataRef.push({
           date: finalDate,
