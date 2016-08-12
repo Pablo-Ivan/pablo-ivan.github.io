@@ -1,5 +1,5 @@
 # Pablo Ivan G. Soto
-A website to showcase my projects. 
+A website to showcase my dev. projects. 
 The stack:
 * AngularJS for the binding and the localStorage.
 * jQuery for appending the chat section.
