@@ -1,5 +1,5 @@
 # Pablo Ivan G. Soto
-A website to showcase my development projects. 
+A website to showcase my development projects.
 The stack:
 * AngularJS for the binding and the localStorage.
 * jQuery for appending the chat section.
@@ -14,5 +14,3 @@ My Projects:
 * Alpha Toe
 * Diplomacy
 * PS-doku.
-
-Right now I'm migrating from Angular 1 to Angular 2...
